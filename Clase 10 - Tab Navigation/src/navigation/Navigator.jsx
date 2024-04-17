@@ -1,18 +1,18 @@
-import { StyleSheet } from 'react-native'
-import React from 'react'
-import { NavigationContainer } from '@react-navigation/native'
-import BottomTabNavigator from './BottomTabNavigator'
-import HomeStackNavigator from './HomeStackNavigator'
+import { StyleSheet } from "react-native";
+import React from "react";
+import { NavigationContainer } from "@react-navigation/native";
+import BottomTabNavigator from "./BottomTabNavigator";
+import HomeStackNavigator from "./HomeStackNavigator";
 
 const Navigator = () => {
   return (
     <NavigationContainer>
-        {/* <BottomTabNavigator/> */}
-        <HomeStackNavigator/>
+      <BottomTabNavigator />
+      {/* <HomeStackNavigator/> */}
     </NavigationContainer>
-  )
-}
+  );
+};
 
-export default Navigator
+export default Navigator;
 
-const styles = StyleSheet.create({})
+const styles = StyleSheet.create({});
