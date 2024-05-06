@@ -18,6 +18,10 @@ const MyProfile = ({ navigation }) => {
         navigation.navigate("Image selector")
     }
 
+    const launchLocation = async () => {
+        navigation.navigate('List Address')
+    }
+
     const signOut = async () => {
         dispatch(clearUser())
     }
@@ -47,6 +51,7 @@ const MyProfile = ({ navigation }) => {
                         : "Add profile picture"
                 }
             />
+            <AddButton onPress={launchLocation} title="My address" />
             <AddButton onPress={signOut} title="Sign out" />
         </View>
     )
